@@ -15,19 +15,18 @@ An interactive assistant for the NAO robot using OpenAI's GPT-4 model for conver
 - [Contributing](#contributing)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
-- [Security Notice](#security-notice)
 
 ## Introduction
 
-This project allows a NAO robot to interact with users through speech, utilizing OpenAI's GPT-4 model for generating responses. The robot listens to user input, processes it, and replies accordingly while exhibiting interactive behaviors like blinking, background movement, and gestures.
+The project allows the NAO robot to talk with users, using the OpenAI GPT-4 model for response generation. The robot listens to user input, processes the information, and replies accordingly while exhibiting various interactive behaviors: blinking, background movement, or gesturing.
 
 ## Features
 
-- **Speech Recognition**: Uses Google's Speech Recognition API to process user speech.
-- **Conversational AI**: Powered by OpenAI GPT-4 for generating human-like responses.
-- **Interactive Behaviors**: Includes blinking, background movement, and listening gestures.
-- **Contextual Commands**: Supports phrases like "repeat that" or "rephrase that."
-- **Physical Interaction Handling**: Responds to touch sensors and physical interactions.
+- **Speech Recognition**: Google's Speech Recognition API to process user speech.
+- **Conversational AI**: Powered by OpenAI GPT-4 for human-like response generation.
+- **Interactive Behaviors**: Autonomously working and Includes blinking, background movement, and listening gestures.
+- **Contextual Commands**: Supports phrases like "repeat that" or "rephrase that, which correspond to different actions."
+- **Physical Interaction Handling**: Responds to touch sensors and physical interactions, which lead to rephrasing and repeating.
 
 ## Prerequisites
 
@@ -41,17 +40,16 @@ This project allows a NAO robot to interact with users through speech, utilizing
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/SIR-2024/build-your-own-sir-group-28.git
+   cd TBA
    ```
 
 2. **Install Required Python Packages**
 
    ```bash
-   pip install -r requirements.txt
+   pip install -r requirements.txt (TBA)
    ```
 
-   *Note: Ensure you have `pip` installed. You may need to use `pip3` depending on your setup.*
 
 3. **Install NAOqi Python SDK**
 
@@ -96,23 +94,23 @@ This project allows a NAO robot to interact with users through speech, utilizing
 Run the script using:
 
 ```bash
-python your_script_name.py
+python (TBA)
 ```
 
 - The robot will start and enable interactive behaviors.
 - The robot listens for user input via its microphone.
-- Press the 'q' key to quit the program.
+<!-- - Press the 'q' key to quit the program. -->
 
 ## Interactive Commands
 
-- **Repeat**: Say "repeat that" or touch the left-side sensors to have the robot repeat its last response.
-- **Rephrase**: Say "rephrase that" or touch the right-side sensors to have the robot rephrase its last response.
+- **Repeat**: Say any phrase with the keyword "repeat" or touch the left-side sensors to have the robot repeat its last response.
+- **Rephrase**: Say any phrase with the keyword "rephrase" or touch the right-side sensors to have the robot rephrase its last response.
 
 ## Troubleshooting
 
-- **No Response from the Robot**: Ensure the robot is connected to the same network and that the IP address is correct.
-- **Speech Recognition Errors**: Check your microphone and ambient noise levels.
-- **API Errors**: Make sure your OpenAI API key is valid and that you have internet connectivity.
+- **No Connection to the Robot**: Make sure the robot is connected to the same network. Check the IP address.
+- **Speech Recognition Errors**: Check if your microphone is enabled and ambient noise levels.
+- **API Errors**: Make sure your OpenAI API key is valid, that you have internet connectivity and you have enough credits. 
 
 ## Contributing
 
@@ -124,10 +122,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-- **OpenAI** for the GPT-4 model.
-- **SoftBank Robotics** for the NAO robot and SDK.
-- **SpeechRecognition** library for handling speech input.
+- **TA's** for their guidance and support.
+- **OpenAI** for their GPT model.
+- **SoftBank Robotics** for the NAO robot and SDK availability.
 
-## Security Notice
 
-Please ensure that you do not expose your OpenAI API key in your code or repository. It's recommended to use environment variables or configuration files to store sensitive information securely.
